@@ -39,7 +39,7 @@ namespace AutoPDF.Plugin.PATS
                 "Non-Monetary Award Type"
             };
 
-            // If the value is "No", return an empty string (i.e., leave the field blank on the form).
+            // If the value is "No", return a field value of "Off" (i.e., leave the field unchecked on the form).
             if (fieldValue.ToUpper().Equals("NO"))
             {
                 foreach (var checkboxField in checkboxFields)
