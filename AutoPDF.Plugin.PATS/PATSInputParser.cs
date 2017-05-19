@@ -46,8 +46,7 @@ namespace AutoPDF.Plugin.PATS
                 {
                     if (fieldName.Equals(checkboxField))
                     {
-                        result = "Off";
-                        break;
+                        return "Off";
                     }
                 }
             }
@@ -61,8 +60,7 @@ namespace AutoPDF.Plugin.PATS
                     {
                         if (fieldName.Equals(amountField))
                         {
-                            result = "";
-                            break;
+                            return "";
                         }
                     }
                 }
